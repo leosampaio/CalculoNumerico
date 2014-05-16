@@ -60,9 +60,15 @@ double *GaussSeidel(double **A, double *b, int n, double tolerancia, int itmax)
             }
             xAtual[i] = (b[i] -sum1 - sum2)/A[i][i];
         }
+        
+        if(abs(normaInfinita(xAtual,n) - normaInfinita(xAnterior,n)) < tolerancia)
+            break;
+        
         for(i=0;i<n;i++)
             xAnterior[i] = xAtual[i]; //atualizo x(0) = x(1) pra ser usado na proxima iteração
-    }                                 //por exemplo, na 2a iteração do for de variavel k, o xAnterior será o calculado na primeira iteração
+                                     //por exemplo, na 2a iteração do for de variavel k, o xAnterior será o calculado na primeira iteração
+        
+    }                                 
 
 
     return xAtual;
