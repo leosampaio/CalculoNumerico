@@ -31,7 +31,7 @@ int main (){
     }
     for(i=0;i<n;i++)
     {
-        printf("Digite o elemento %d do vetor B: ",i)
+        printf("Digite o elemento %d do vetor B: ",i);
         printf("\n");
         scanf("%f",&b[i]);
     }
@@ -54,7 +54,7 @@ double *GaussSeidel(double **A, double *b, int n, double tolerancia, int itmax)
             {
                 sum1+= A[i][j]*xAtual[j];
             }
-            for(j=i+1;j<n)
+            for(j=i+1;j<n;j++)
             {
                 sum2+= A[i][j]*xAnterior[j];
             }
@@ -65,7 +65,7 @@ double *GaussSeidel(double **A, double *b, int n, double tolerancia, int itmax)
     }                                 //por exemplo, na 2a iteração do for de variavel k, o xAnterior será o calculado na primeira iteração
 
 
-    return x;
+    return xAtual;
 }
 
 double normaInfinita (double **A, int n){
