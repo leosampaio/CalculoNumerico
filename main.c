@@ -4,8 +4,8 @@
  * Prof. Murilo Francisco Tomé
  *
  * Desenvolvido por:
- * Antônio Carlos                       NUSPº
- * Gabriela Duque                       NUSPº
+ * Antonio Carlos Moreira Lopes Júnior  NUSPº 7987290
+ * Gabriela Pinto Cesar Duque           NUSPº 7694220
  * Leonardo Sampaio Ferraz Ribeiro      NUSPº 8532300
  *
  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
