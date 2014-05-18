@@ -5,7 +5,7 @@
 double *GaussSeidel(double **, double *, int, double, int);
 double normaInfinita (double **, int);
 
-int main (){
+void testarComEntradasDoUsuario() {
 
     int i,j,n, itmax;
     double tolerancia, *b, **A;
